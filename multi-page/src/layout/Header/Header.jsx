@@ -4,14 +4,17 @@ import { NavLink } from "react-router";
 const Header = () => {
     return (
         <div>
-            <nav>
+            <nav className='flex gap-4'>
                 <NavLink to="/" end>
                     Home
                 </NavLink>
                 <NavLink to="/sobre" end>
                     Sobre
                 </NavLink>
-                
+                <NavLink to="/blog" end>
+                   Blog
+                </NavLink>
+
             </nav>
         </div>
     )
