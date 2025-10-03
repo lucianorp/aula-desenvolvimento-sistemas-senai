@@ -6,9 +6,14 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter } from 'react-router'
 import { RouterProvider } from 'react-router/dom'
 
+//import toastify
+import { ToastContainer } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css'
+
 
 import './index.css'
 import Login from './pages/Login/Login'
+import { AuthProvider } from './contexts/AuthContext'
 // import App from './App.jsx'
 
 const router = createBrowserRouter([
@@ -20,7 +25,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <ToastContainer />
+      <RouterProvider router={router} />
+    </AuthProvider>
     {/* <App /> */}
   </StrictMode>,
 )
