@@ -2,12 +2,19 @@ import { useState } from "react"
 import { useAuth } from "../../contexts/AuthContext"
 import axios from "axios"
 import { toast } from "react-toastify"
+import { useNavigate } from "react-router"
+import Modal from "../Modal/Modal"
+import RegisterUser from "../RegisterUser/RegisterUser"
 
 const LoginForm = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     //contexto
     const { login } = useAuth()
+    //rotas com react route
+    const navigate = useNavigate()
+    // modal
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
 
     //função de validação do login
@@ -37,8 +44,15 @@ const LoginForm = () => {
                 hideProgressBar: true
             })
 
+            setTimeout(() => navigate('/dashboard'), 2000)
+
         }
-        catch {
+        catch (error) {
+            console.error('Erro ao verificar o usuário')
+            toast.error('Erro ao conectar com o servidor', {
+                autoClose: 1000,
+                hideProgressBar: true
+            })
 
         }
     }
@@ -77,16 +91,19 @@ const LoginForm = () => {
                 </div>
                 <button
                     type="submit"
-                    className="w-full bg-cyan-700 text-white p-2 rounded-lg hover:bg-cyan-800 transition-colors">Entrar</button>
+                    className="w-full bg-cyan-700 text-white p-2 rounded-lg hover:bg-cyan-800 transition-colors cursor-pointer">Entrar</button>
             </form>
 
             <div className="flex justify-between mt-4 text-sm">
-                <button>Esqueceu sua senha?</button>
-                <button>Criar conta</button>
+                <button className="cursor-pointer">Esqueceu sua senha?</button>
+                <button className="cursor-pointer" onClick={() => setIsModalOpen(true)}>Criar conta</button>
             </div>
 
-
+            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+                <RegisterUser />
+            </Modal>
         </div>
+
     )
 }
 
