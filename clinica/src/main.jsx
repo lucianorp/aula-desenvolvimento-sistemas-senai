@@ -15,6 +15,8 @@ import './index.css'
 import Login from './pages/Login/Login'
 import { AuthProvider } from './contexts/AuthContext'
 import Dashboard from './pages/Dashboard/Dashboard'
+import PrivateRoute from './components/PrivateRoute/PrivateRoute'
+import DashboardLayout from './layouts/DashboardLayout'
 // import App from './App.jsx'
 
 const router = createBrowserRouter([
@@ -24,7 +26,11 @@ const router = createBrowserRouter([
   },
   {
     path: "dashboard",
-    element: <Dashboard />
+    element: (
+      <PrivateRoute>
+        <DashboardLayout />
+      </PrivateRoute>
+    )
   }
 ])
 
