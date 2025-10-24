@@ -25,5 +25,87 @@
       "email": "luciano20@gmail.com",
       "password": "123456789"
     }
+  ],
+  "patients":[
+    {
+      "id":"1",
+      "fullName":"João da Silva",
+      "gender":"Masculino",
+      "birthdate":"11/08/2000",
+      "cpf":"958.555.555-55",
+      "rg":"958.555.555-55",
+      "maritalStatus":"Solteiro",
+      "phone":"48-98888-5555",
+      "email":"joao@email.com",
+      "birthplace":"Florianópolis",
+      "emergencyContact":"48-96666-5555",
+      "allergies":"alergia A, alergia B",
+      "specialCare":"evitar açúcar",
+      "healthInsurance":"Unimed",
+      "insuranceNumber":"1251112",
+      "insuranceValidity":"15/10/2027",
+      "address":{
+        "cep":"88055-565",
+        "city":"Florianópolis",
+        "state":"SC",
+        "street":"Rua das goiabas",
+        "number":"32",
+        "complement":"casa",
+        "neighborhood":"centro",
+        "reference":"próximo da UPA"
+      }
+    },
+    {
+      "id":"2",
+      "fullName":"Maria",
+      "gender":"Feminino",
+      "birthdate":"11/08/2000",
+      "cpf":"958.555.555-55",
+      "rg":"958.555.555-55",
+      "maritalStatus":"Solteiro",
+      "phone":"48-98888-5555",
+      "email":"joao@email.com",
+      "birthplace":"Florianópolis",
+      "emergencyContact":"48-96666-5555",
+      "allergies":"alergia A, alergia B",
+      "specialCare":"evitar açúcar",
+      "healthInsurance":"Unimed",
+      "insuranceNumber":"1251112",
+      "insuranceValidity":"15/10/2027",
+      "address":{
+        "cep":"88055-565",
+        "city":"Florianópolis",
+        "state":"SC",
+        "street":"Rua das goiabas",
+        "number":"32",
+        "complement":"casa",
+        "neighborhood":"centro",
+        "reference":"próximo da UPA"
+      }
+    }
+  ],
+  "consults":[
+    {
+      "patientId":"1",
+      "reason":"gripe",
+      "date":"27-07-2025",
+      "time":"15:30",
+      "description":"dores de cabeça e coriza",
+      "medication":"benegrip",
+      "dosagePrecaution":"2 vezes ao dia",
+      "id":"1"
+    }
+  ],
+  "exams":[
+    {
+      "name":"cardiológico",
+      "date":"12-07-2023",
+      "time":"15:30",
+      "type":"cateterismo",
+      "laboratory":"santa luzia",
+      "documentUrl":"site.com.br/exame.pdf",
+      "results":"dados do exame",
+      "id":"1"
+    }
   ]
 }
