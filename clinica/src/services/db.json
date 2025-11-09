@@ -2,110 +2,151 @@
   "users": [
     {
       "id": "1",
-      "email": "joao@email.com",
-      "password": "123456789"
+      "email": "luciano.rocha@edu.sc.senai.br",
+      "password": "123465798"
     },
     {
       "id": "2",
+      "email": "luciano.pereira@gmail.com",
+      "password": "2514411"
+    }
+  ],
+  "patients": [
+    {
+      "id": "1",
+      "fullName": "João",
+      "gender": "Masculino",
+      "birthdate": "11/12/1980",
+      "cpf": "958.521.251.65",
+      "rg": "1215111154",
+      "maritalStatus": "Solteiro",
+      "phone": "(48)9525-56232",
+      "email": "joao@email.com",
+      "birthplace": "joao pessoa",
+      "emergencyContact": "(48)9525-56232",
+      "allergies": "alergia A, alergia B",
+      "specialCare": "cuidados",
+      "healthInsurance": "convênio X",
+      "insuranceNumber": "15155115",
+      "insuranceValidity": "15/01/2025",
+      "address": {
+        "cep": "88052-562",
+        "city": "florianopolis",
+        "state": "SC",
+        "street": "rua x",
+        "number": "32",
+        "complement": "casa",
+        "neighborhood": "centro",
+        "reference": "perto de x"
+      }
+    },
+    {
+      "id": "2",
+      "fullName": "Maria",
+      "gender": "Masculino",
+      "birthdate": "11/12/1960",
+      "cpf": "958.521.251.65",
+      "rg": "1215111154",
+      "maritalStatus": "Solteiro",
+      "phone": "(48)9525-56232",
       "email": "maria@email.com",
-      "password": "123456789"
-    },
-    {
-      "id": "cb2e",
-      "email": "luciano@email.com",
-      "password": "123456789"
-    },
-    {
-      "id": "058a",
-      "email": "luciano3@email.com",
-      "password": "123456789"
-    },
-    {
-      "id": "ef3c",
-      "email": "luciano20@gmail.com",
-      "password": "123456789"
-    }
-  ],
-  "patients":[
-    {
-      "id":"1",
-      "fullName":"João da Silva",
-      "gender":"Masculino",
-      "birthdate":"11/08/2000",
-      "cpf":"958.555.555-55",
-      "rg":"958.555.555-55",
-      "maritalStatus":"Solteiro",
-      "phone":"48-98888-5555",
-      "email":"joao@email.com",
-      "birthplace":"Florianópolis",
-      "emergencyContact":"48-96666-5555",
-      "allergies":"alergia A, alergia B",
-      "specialCare":"evitar açúcar",
-      "healthInsurance":"Unimed",
-      "insuranceNumber":"1251112",
-      "insuranceValidity":"15/10/2027",
-      "address":{
-        "cep":"88055-565",
-        "city":"Florianópolis",
-        "state":"SC",
-        "street":"Rua das goiabas",
-        "number":"32",
-        "complement":"casa",
-        "neighborhood":"centro",
-        "reference":"próximo da UPA"
+      "birthplace": "joao pessoa",
+      "emergencyContact": "(48)9525-56232",
+      "allergies": "alergia A, alergia B",
+      "specialCare": "cuidados",
+      "healthInsurance": "convênio X",
+      "insuranceNumber": "15155115",
+      "insuranceValidity": "15/01/2025",
+      "address": {
+        "cep": "88052-562",
+        "city": "florianopolis",
+        "state": "SC",
+        "street": "rua x",
+        "number": "32",
+        "complement": "casa",
+        "neighborhood": "centro",
+        "reference": "perto de x"
       }
     },
     {
-      "id":"2",
-      "fullName":"Maria",
-      "gender":"Feminino",
-      "birthdate":"11/08/2000",
-      "cpf":"958.555.555-55",
-      "rg":"958.555.555-55",
-      "maritalStatus":"Solteiro",
-      "phone":"48-98888-5555",
-      "email":"joao@email.com",
-      "birthplace":"Florianópolis",
-      "emergencyContact":"48-96666-5555",
-      "allergies":"alergia A, alergia B",
-      "specialCare":"evitar açúcar",
-      "healthInsurance":"Unimed",
-      "insuranceNumber":"1251112",
-      "insuranceValidity":"15/10/2027",
-      "address":{
-        "cep":"88055-565",
-        "city":"Florianópolis",
-        "state":"SC",
-        "street":"Rua das goiabas",
-        "number":"32",
-        "complement":"casa",
-        "neighborhood":"centro",
-        "reference":"próximo da UPA"
+      "id": "00d1",
+      "fullName": "Pedro",
+      "gender": "masculino",
+      "birthdate": "2000-02-14",
+      "cpf": "958.585.454-11",
+      "rg": "1111311313",
+      "maritalStatus": "solteiro(a)",
+      "phone": "(48) 98555-2555",
+      "email": "pedro@gmail.com",
+      "birthplace": "Brasileiro",
+      "emergencyContact": "(48) 99999-8898",
+      "allergies": "",
+      "specialCare": "",
+      "healthInsurance": "Unimed",
+      "insuranceNumber": "",
+      "insuranceValidity": "",
+      "address": {
+        "cep": "88054-637",
+        "city": "Florianópolis",
+        "state": "SC",
+        "street": "Servidão Sul Brasil",
+        "number": "",
+        "complement": "",
+        "neighborhood": "Canasvieiras",
+        "reference": ""
+      }
+    },
+    {
+      "id": "afc4",
+      "fullName": "Luciano teste",
+      "gender": "masculino",
+      "birthdate": "1999-02-10",
+      "cpf": "967.385.955-11",
+      "rg": "51511155151",
+      "maritalStatus": "solteiro(a)",
+      "phone": "(48) 95959-5955",
+      "email": "luciano@gmail.com",
+      "birthplace": "brasileiro",
+      "emergencyContact": "(95) 95959-5955",
+      "allergies": "camarão, poeira",
+      "specialCare": "cuidados",
+      "healthInsurance": "unimed",
+      "insuranceNumber": "1212111",
+      "insuranceValidity": "2025-10-24",
+      "address": {
+        "cep": "88054-637",
+        "city": "Florianópolis",
+        "state": "SC",
+        "street": "Servidão Sul Brasil",
+        "number": "21",
+        "complement": "ssdsdfaf",
+        "neighborhood": "Canasvieiras",
+        "reference": "dfasd"
       }
     }
   ],
-  "consults":[
+  "consults": [
     {
-      "patientId":"1",
-      "reason":"gripe",
-      "date":"27-07-2025",
-      "time":"15:30",
-      "description":"dores de cabeça e coriza",
-      "medication":"benegrip",
-      "dosagePrecaution":"2 vezes ao dia",
-      "id":"1"
+      "patientId": 2,
+      "reason": "Resfriado 2",
+      "date": "2023-07-27",
+      "time": "15:30",
+      "description": "fdfadsfasdf ",
+      "medication": "fdf asdf asfdasdf a",
+      "dosagePrecautions": "fdaf dfasd a",
+      "id": "2"
     }
   ],
-  "exams":[
+  "exams": [
     {
-      "name":"cardiológico",
-      "date":"12-07-2023",
-      "time":"15:30",
-      "type":"cateterismo",
-      "laboratory":"santa luzia",
-      "documentUrl":"site.com.br/exame.pdf",
-      "results":"dados do exame",
-      "id":"1"
+      "name": "fdafdsaf",
+      "date": "2023-07-12",
+      "time": "15:20",
+      "type": "fasdfafd",
+      "laboratory": "fsdfadsfa",
+      "documentUrl": "fdasdfafd.com.br",
+      "results": "fdafdasdfad asd",
+      "id": "1"
     }
   ]
 }
