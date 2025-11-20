@@ -135,6 +135,16 @@
       "medication": "fdf asdf asfdasdf a",
       "dosagePrecautions": "fdaf dfasd a",
       "id": "2"
+    },
+    {
+      "id": "8432",
+      "patientId": "00d1",
+      "reason": "Covid",
+      "date": "2025-11-11",
+      "time": "00:22",
+      "description": "Descrição do covid",
+      "medication": "dipirona",
+      "dosagePrecautions": "3 vezes no máximo por dia e descanso\n"
     }
   ],
   "exams": [
@@ -147,6 +157,17 @@
       "documentUrl": "fdasdfafd.com.br",
       "results": "fdafdasdfad asd",
       "id": "1"
+    },
+    {
+      "id": "4a30",
+      "name": "Cateterismo",
+      "date": "2025-11-03",
+      "time": "01:34",
+      "type": "cardiológico",
+      "laboratory": "barriga verde",
+      "documentUrl": "dfasdfasd",
+      "results": "dfasdfadf daf sdfadsf adsf ",
+      "patientId": "1"
     }
   ]
 }

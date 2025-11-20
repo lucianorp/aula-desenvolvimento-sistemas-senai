@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useNavigate, NavLink } from "react-router";
 import {
   MdDashboard,
   MdExitToApp,
@@ -25,9 +25,8 @@ const SideMenu = () => {
 
   return (
     <aside
-      className={`h-screen bg-cyan-800 text-white flex flex-col justify-between transition-all duration-300 ${
-        isCollapsed ? "w-20" : "w-64"
-      }`}
+      className={`h-screen bg-cyan-800 text-white flex flex-col justify-between transition-all duration-300 ${isCollapsed ? "w-20" : "w-64"
+        }`}
     >
       {/* TOPO - Botão de Toggle */}
       <div className="p-4 flex items-center justify-between border-b border-cyan-700">
@@ -46,13 +45,15 @@ const SideMenu = () => {
       <nav className="flex-1 p-4 space-y-4 overflow-y-auto">
         <ul className="space-y-3">
           <li>
-            <Link
+            <NavLink
               to="/dashboard"
-              className="flex items-center gap-3 hover:text-cyan-300"
+              className={({ isActive }) =>
+                isActive ? "bg-white" : ""
+              }
             >
               <MdDashboard size={20} />
               {!isCollapsed && <span>Início</span>}
-            </Link>
+            </NavLink>
           </li>
 
           <li>

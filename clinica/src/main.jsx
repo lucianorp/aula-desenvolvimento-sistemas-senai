@@ -18,6 +18,7 @@ import MedicalRecordList from './components/MedicalRecordList/MedicalRecordList'
 import RegisterFormPatient from './components/RegisterFormPatient/RegisterFormPatient';
 import ConsultationForm from './components/ConsultationForm/ConsultationForm';
 import ExamsForm from './components/ExamsForm/ExamsForm';
+import PatientDetails from './components/PatientDetails/PatientDetails';
 
 const router = createBrowserRouter([
   { path: "/", element: <Login /> },
@@ -32,8 +33,9 @@ const router = createBrowserRouter([
       { path: "/dashboard", element: <Dashboard /> },
       { path: "/prontuarios", element: <MedicalRecordList/>},
       { path: "/pacientes", element: <RegisterFormPatient/> },
-      { path: "/consultas", element: <ConsultationForm/> },
-      { path: "/exames", element: <ExamsForm />},
+      { path: "/consultas", element: <ConsultationForm/>},
+      { path: "/exames", element: <ExamsForm/> },
+      { path: '/paciente/:id', element:<PatientDetails/> },
     ],
   },
 ]);
